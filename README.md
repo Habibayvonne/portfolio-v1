@@ -8,7 +8,7 @@ This is the first rendition of my portfolio built HTML and CSS
 - HTML and CSS
 
 ## Live Demo
-[View live here](https://spacetraveleryun.netlify.app/)
+[Demo](https://habibayvonneportfolio.netlify.app/)
 
 ## Authors
 

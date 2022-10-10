@@ -42,6 +42,9 @@ a:hover {
   color: var(--hotmag);
   text-decoration: none;
 }
+img{
+  width: 100%;
+}
 /* intro styles */
 #intro {
   padding-bottom: 4rem 1rem 10rem 1rem;
@@ -161,7 +164,7 @@ nav [class*="fa-"]:hover {
 .blackbox {
     padding: 1rem;
     border-radius: 10px;
-    color: white;
+    color: var(--white);
     background-color: var(--black);
     font-size: 1rem;
     line-height: 1.5;
@@ -183,6 +186,57 @@ nav [class*="fa-"]:hover {
     border-top: 1px solid var(--aqua);
     border-radius: 25px;
 }
+
+
+@media (min-width:800px){
+article{
+  display: grid;
+  grid-template-columns:repeat(10,1fr) ;
+  
+}
+#projects{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#projects img{
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+.text{
+  order: 2; 
+  text-align: right;
+  grid-column: 5/11;
+  grid-row: 1/2;
+}
+#projects ul{
+  justify-content: flex-end;
+}
+#projects .reverse .text{
+  grid-column: 1/7;
+  order: 2;
+  text-align: left;
+}
+#projects .reverse img{
+  grid-column: 6/11;
+  grid-row: 1/2;
+}
+#projects .reverse ul{
+  justify-content: flex-start;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 850px) {
@@ -214,6 +268,9 @@ footer ul {
 /* colored div*/
 .section-plum{
   background-color: var(--plum);
+}
+.section-dkblue{
+  background-color: var(--dkblue);
 }
 .gradient{
 background: linear-gradient(90deg, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);

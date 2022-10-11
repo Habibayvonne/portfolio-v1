@@ -212,12 +212,12 @@ article{
   justify-content: flex-end;
 }
 #projects .reverse .text{
-  grid-column: 1/7;
+  grid-column: 1/6;
   order: 2;
   text-align: left;
 }
 #projects .reverse img{
-  grid-column: 6/11;
+  grid-column: 5/11;
   grid-row: 1/2;
 }
 #projects .reverse ul{
